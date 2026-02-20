@@ -2,23 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TaskPilot Login Page</title>
+  <title>TaskPilot Login</title>
   <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-    <h1>TaskPilot Login Page</h1>
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="username">
+  <header class="navbar">
+    <div class="logo"><a href="index.html">TaskPilot</a></div>
+  </header>
 
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" placeholder="example@email.com">
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2>Welcome Back</h2>
+      <p class="auth-subtext">Login to continue managing your tasks.</p>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="password">
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
 
-    <button type="button" id="submit">Login</button>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="example@email.com">
+        </div>
 
-    <script src="login.js"></script>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <button type="button" class="btn btn-primary btn-full" id="submit">Login</button>
+      </form>
+
+      <p class="switch-text">
+        Don’t have an account? <a href="register.html">Register</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
 </body>
 </html>
